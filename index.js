@@ -24,6 +24,7 @@ init({
   thoughtSpotHost: tsClusterUrl,
   authType: AuthType.AuthServer,
   username: userName,
+  autoLogin: true,
   getAuthToken: () => {
     return fetch(`${tsClusterUrl}callosum/v1/tspublic/v1/session/auth/token`, {
       method: 'POST',
